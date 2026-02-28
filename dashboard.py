@@ -273,6 +273,7 @@ with tab1:
     fig_bar.update_traces(
         textposition="outside",
         textfont_size=13,
+        cliponaxis=False,
         hovertemplate="<b>%{y}</b><br>%{text}<extra></extra>",
     )
     st.plotly_chart(fig_bar, use_container_width=True, config={"displayModeBar": False})
@@ -327,6 +328,7 @@ with tab1:
     fig_comp.update_traces(
         textposition="outside",
         textfont_size=12,
+        cliponaxis=False,
         hovertemplate="<b>%{y}</b><br>%{text}<extra></extra>",
     )
     st.plotly_chart(fig_comp, use_container_width=True, config={"displayModeBar": False})
@@ -424,6 +426,7 @@ with tab2:
         fig_moku.update_traces(
             textposition="outside",
             textfont_size=12,
+            cliponaxis=False,
             hovertemplate="<b>%{y}</b><br>%{text}<extra></extra>",
         )
         st.plotly_chart(fig_moku, use_container_width=True, config={"displayModeBar": False})
